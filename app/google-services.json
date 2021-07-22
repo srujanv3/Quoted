@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417707917746",
+    "project_id": "quoted-f73d5",
+    "storage_bucket": "quoted-f73d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417707917746:android:c882c0de8d9093bfada4ab",
+        "android_client_info": {
+          "package_name": "com.blogspot.svdevs.quotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417707917746-s28nasft8vh486nd73obnvtvmsocj98n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJpkWu0cRzLWkU0q7zOpTpo0ZTj2aYUNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417707917746-s28nasft8vh486nd73obnvtvmsocj98n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="32dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="0dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginStart="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvCurrentTime"
+                android:layout_below="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 hour ago"
+                android:layout_marginStart="6dp"
+                android:textSize="18sp"
+                android:layout_marginEnd="6dp" />
+
+
+
+        <ImageView
+            android:id="@+id/img_quote"
+            android:layout_below="@+id/tvCurrentTime"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleX="-1"
+            android:scaleY="-1"
+            android:src="@drawable/ic_quote"
+            app:tint="#454545" />
+
+        <TextView
+            android:id="@+id/quoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_quote"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/img_quote"
+            android:text="Geinus is one percent inspiration and ninety-nine percent perspiration "
+            android:textColor="#454545"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/quoteAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quoteText"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/img_quote"
+            android:fontFamily="@font/title_font"
+            android:text="-Thomas Edison"
+            android:textColor="#454545"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

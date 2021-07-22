@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient"
+        android:padding="32dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="0dp"
+        tools:context=".CreatePostActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/title_font"
+            android:text="CREATE POST"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bg"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/quoteText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:hint="Quote text"
+                android:inputType="textImeMultiLine"
+                android:maxLines="3"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:textColor="#454545"
+                android:textColorHint="#D3D3D3"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/quoteAuthor"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:inputType="text"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quoteText"
+                android:maxLines="1"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:textColorHint="#D3D3D3"
+                android:ellipsize="end"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/title_font"
+                android:hint="Author/Your Name"
+                android:layout_centerHorizontal="true"
+                android:textColor="#454545"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <android.widget.Button
+            android:id="@+id/btn_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="CREATE"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
